@@ -48,7 +48,7 @@ describe('getCountryByCode', () => {
 
 describe('getCountryByName', () => {
   test('returns first country for a name match', async () => {
-    mock.onGet(/\/name\/United States/).reply(200, [mockCountry]);
+    mock.onGet(/\/name\//).reply(200, [mockCountry]);
     const result = await getCountryByName('United States');
     expect(result.name.common).toBe('United States');
   });

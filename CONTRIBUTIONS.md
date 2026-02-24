@@ -6,7 +6,7 @@
 
 ## Team Member Breakdown
 
-### Member 1 — API Integration & CLI Entry Point (~30%)
+### Alex - API Integration & CLI Entry Point (~30%)
 **Branches created:** `feature/weather-api`, `feature/cli-commands`
 
 **Contributions:**
@@ -15,9 +15,9 @@
 - Added `WeatherApiError` custom error class
 - `calculateStats()` function for multi-city comparisons
 
----
 
-### Member 2 — Data Processing & Validation (~25%)
+
+### Alex - Data Processing & Validation (~25%)
 **Branches created:** `feature/countries-api`, `feature/validation`
 
 **Contributions:**
@@ -25,9 +25,9 @@
 - Implemented `src/utils/validator.js` — Joi schemas for city names, compare strings, forecast days, and API responses
 - Added `CountriesApiError` custom error class
 
----
 
-### Member 3 — Testing & File Handling (~25%)
+
+### Alex - Testing & File Handling (~25%)
 **Branches created:** `feature/file-handler`, `feature/tests`
 
 **Contributions:**
@@ -36,9 +36,9 @@
 - Set up `axios-mock-adapter` for HTTP mocking
 - Configured Jest coverage thresholds in `package.json`
 
----
 
-### Member 4 — Configuration, Logging & Documentation (~20%)
+
+### Alex - Configuration, Logging & Documentation (~20%)
 **Branches created:** `feature/config-logger`, `docs/readme`
 
 **Contributions:**
@@ -47,23 +47,21 @@
 - Created `README.md`, `.env.example`, `.gitignore`, `LICENSE`, `CONTRIBUTIONS.md`
 - Set up repository structure, initial commit, and `.env.example`
 
----
+
 
 ## Collaboration Process
 
 - **GitHub** for version control and pull requests
 - **Feature branches** for all new work — no direct commits to `main`
-- **Pull request reviews** — each PR required at least one team member review before merging
 - **Conventional commits** — messages follow the format: `feat:`, `fix:`, `test:`, `docs:`, `chore:`
-- **Communication** via team chat (Discord/Slack) for coordination
 
----
+
 
 ## Work Distribution Summary
 
 | Member | Approx. % | Primary Files |
 |--------|-----------|---------------|
-| Member 1 | 30% | `weatherApi.js`, `index.js` |
-| Member 2 | 25% | `countriesApi.js`, `validator.js` |
-| Member 3 | 25% | `fileHandler.js`, `tests/*.test.js` |
-| Member 4 | 20% | `logger.js`, `config.js`, docs |
+| Alex | 30% | `weatherApi.js`, `index.js` |
+| Alex | 25% | `countriesApi.js`, `validator.js` |
+| Alex | 25% | `fileHandler.js`, `tests/*.test.js` |
+| Alex | 20% | `logger.js`, `config.js`, docs |

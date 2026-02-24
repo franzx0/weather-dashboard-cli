@@ -86,7 +86,7 @@ describe('Full weather + country pipeline', () => {
     mock.onGet(/\/alpha\/US/).reply(404, {});
 
     const weather = await getCurrentWeather('Indianapolis');
-    // Country fetch would fail — ensure downstream code handles null
+    // Country fetch would fail - ensure downstream code handles null
     const country = null;
     const report = buildWeatherReport(weather, country);
     expect(report).toContain('Indianapolis');

@@ -58,12 +58,12 @@ describe('getCurrentWeather', () => {
   });
 
   test('throws WeatherApiError when API key is missing', async () => {
-    delete process.env.OPENWEATHER_API_KEY;
-    // Re-require to pick up missing key — instead just check the guard
-    const { WeatherApiError: WAE } = require('../src/api/weatherApi');
-    // Manually test config guard by importing with empty key
-    process.env.OPENWEATHER_API_KEY = '';
-    await expect(getCurrentWeather('Indianapolis')).rejects.toThrow('OPENWEATHER_API_KEY');
+  const savedKey = process.env.OPENWEATHER_API_KEY;
+  process.env.OPENWEATHER_API_KEY = '';
+  jest.resetModules();
+  const { getCurrentWeather: getWeather } = require('../src/api/weatherApi');
+  await expect(getWeather('Indianapolis')).rejects.toThrow('OPENWEATHER_API_KEY');
+  process.env.OPENWEATHER_API_KEY = savedKey;
   });
 
   test('throws WeatherApiError on network error', async () => {
