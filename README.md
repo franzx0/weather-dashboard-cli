@@ -17,8 +17,8 @@ A command-line weather dashboard built with Node.js that fetches real-time weath
 
 - **Current weather** for any city (temperature, humidity, wind, conditions)
 - **5-day forecast** with daily summaries
-- **City comparison** — compare weather across multiple cities with statistics (hottest, coldest, most humid, average temp)
-- **Country enrichment** — automatically fetches capital, population, currency & timezone via REST Countries API
+- **City comparison** compare weather across multiple cities with statistics (hottest, coldest, most humid, average temp)
+- **Country enrichment** automatically fetches capital, population, currency & timezone via REST Countries API
 - **Save results** to JSON files and generate Markdown reports
 - **Colorized CLI** output with loading spinners and tables
 
@@ -99,9 +99,9 @@ Options:
 ## Output
 
 When `--save` is used, files are written to the `output/` directory:
-- `weather_<city>_<timestamp>.json` — raw + processed data
-- `report_<city>_<timestamp>.md` — formatted markdown report
-- `comparison_<timestamp>.json` — comparison data with statistics
+- `weather_<city>_<timestamp>.json` - raw + processed data
+- `report_<city>_<timestamp>.md` - formatted markdown report
+- `comparison_<timestamp>.json` - comparison data with statistics
 
 ---
 
@@ -119,11 +119,11 @@ npm run test:watch
 ```
 
 ### Test structure
-- `tests/validator.test.js` — CLI argument and API response validation
-- `tests/weatherApi.test.js` — Weather API functions with mocked HTTP calls
-- `tests/countriesApi.test.js` — Countries API functions with mocked HTTP calls
-- `tests/fileHandler.test.js` — File save, read, and report generation
-- `tests/integration.test.js` — End-to-end pipeline integration tests
+- `tests/validator.test.js` - CLI argument and API response validation
+- `tests/weatherApi.test.js` - Weather API functions with mocked HTTP calls
+- `tests/countriesApi.test.js` - Countries API functions with mocked HTTP calls
+- `tests/fileHandler.test.js` - File save, read, and report generation
+- `tests/integration.test.js` - End-to-end pipeline integration tests
 
 ---
 
