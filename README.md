@@ -6,10 +6,10 @@ A command-line weather dashboard built with Node.js that fetches real-time weath
 
 | Name | Role |
 |------|------|
-| Member 1 | API Integration & CLI |
-| Member 2 | Data Processing & Validation |
-| Member 3 | Testing & File Handling |
-| Member 4 | Documentation & Git Workflow |
+| Alex | API Integration & CLI |
+| Alex | Data Processing & Validation |
+| Alex | Testing & File Handling |
+| Alex | Documentation & Git Workflow |
 
 ---
 
